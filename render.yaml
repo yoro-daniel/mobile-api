@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: mobile-api
-    env: dotnet
-    buildCommand: dotnet publish -c Release -o out
-    startCommand: dotnet out/MobileApi.dll
