@@ -11,4 +11,5 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 app.MapControllers();   
-app.Run();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "10000";
+app.Run($"http://0.0.0.0:{port}");
